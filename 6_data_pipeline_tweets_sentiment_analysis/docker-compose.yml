@@ -1,0 +1,37 @@
+version: '3'
+services:
+
+  mongodb:
+    image: mongo
+    ports:
+    - 27017:27017
+
+  tweet_collector:
+    build: tweet_collector/
+    volumes:
+    - ./tweet_collector/:/app
+    depends_on:
+    - mongodb
+
+  postgresdb:
+    image: postgres
+    ports:
+    - "5555:5432"
+    environment:
+    - POSTGRES_USERNAME=postgres
+    - POSTGRES_PASSWORD=****
+
+  etl: 
+    build: etl_job/
+    volumes:
+    - ./etl_job/:/app
+    depends_on:
+    - mongodb 
+    - postgresdb
+
+  slack_bot:
+    build: slack_bot/
+    volumes:
+    - ./slack_bot/:/app
+    depends_on:
+    - postgresdb 
