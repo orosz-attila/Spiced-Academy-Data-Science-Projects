@@ -3,3 +3,6 @@
 This repository contains the notebooks and programm codes of the projects I completed during a Data Science Bootcamp at SPICED Academy from September to December 2021. These are not finalized versions, yet. I am continously refactoring, correcting and updating the codes during 
 January, 2022.
 
+## 01. Visual Data Analysis - Animated Scatterplot
+
+![lifeexp_1960](https://user-images.githubusercontent.com/89396215/150553939-23c4b97e-4c27-4ff8-8125-af7a9599913a.png)
