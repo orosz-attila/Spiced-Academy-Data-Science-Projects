@@ -15,5 +15,5 @@ The dashboard is deployed with Streamlit and can be found [here](https://share.s
 
 The notebook with detailed comments and plotly interactivy is also available on [Jupyter Colab](https://drive.google.com/file/d/1StLDRJ7LVoPS10AULBxVOJo8rDqnt3U8/view?usp=sharing).
 
-https://user-images.githubusercontent.com/89396215/150576717-d8995cbf-da33-4b4b-a539-26b9dadcbe3b.mp4
+https://user-images.githubusercontent.com/89396215/150577207-736641ef-cef7-4754-84b6-713a01d19c4c.mp4
 
