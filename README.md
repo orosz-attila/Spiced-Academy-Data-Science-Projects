@@ -6,3 +6,5 @@ January, 2022.
 ## 01. Visual Data Analysis - Animated Scatterplot
 
 ![output](https://user-images.githubusercontent.com/89396215/150568471-501c1d0c-53f5-4450-b6d5-78df639837bb.gif)
+
+## 02. Classification - Titanic challenge
