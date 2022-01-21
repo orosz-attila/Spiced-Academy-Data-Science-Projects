@@ -5,4 +5,4 @@ January, 2022.
 
 ## 01. Visual Data Analysis - Animated Scatterplot
 
-![output1](https://user-images.githubusercontent.com/89396215/150567037-668c573e-d3c2-4b20-84c8-c2c2fb1a5cce.gif)
+![output](https://user-images.githubusercontent.com/89396215/150568471-501c1d0c-53f5-4450-b6d5-78df639837bb.gif)
