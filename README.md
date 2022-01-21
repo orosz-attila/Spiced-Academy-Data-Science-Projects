@@ -9,7 +9,7 @@ January, 2022.</div>
 
 ## 12. Final Project - Covid-19 Dashboard
 
-<div align="justify">As a final project, I built an interactive dashboard with daily updates, displaying 23 data categories on a scatter world map, the trends of the Covid-19 pandemic by countries, with the option of comparing countries in multiple user-selected data categories in line- and barcharts.</div>
+<div align="justify">As a final project, I built an interactive dashboard with daily updates, displaying 23 data categories on a scatter world map, the trends of the Covid-19 pandemic by countries, with the option of comparing countries in multiple user-selected data categories in line- and barcharts.</div><br>
 
 The dashboard is deployed with Streamlit and can be found [here](https://share.streamlit.io/orosz-attila/covid-19-dashboard/main).
 
