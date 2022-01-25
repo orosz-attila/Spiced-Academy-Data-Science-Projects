@@ -3,7 +3,7 @@
 </p>
 
 
-<div align="justify">This repository contains the notebooks and programm codes of the projects I completed during a Data Science Bootcamp at SPICED Academy from September to December 2021. These are not finalized versions, yet. I am continously refactoring, correcting and updating the codes during 
+<div align="justify">This repository contains the projects I completed during a Data Science Bootcamp at SPICED Academy from September to December 2021. These are not finalized versions, yet. I am continously refactoring, correcting and updating the codes during 
 January, 2022.</div>
 
 ## 01. Visual Data Analysis - Animated Scatterplot
