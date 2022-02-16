@@ -18,9 +18,16 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 ## 12. Final Project - Covid-19 Dashboard
 
-<div align="justify">As a final project, I built an interactive dashboard with daily updates, displaying 23 data categories on a scatter world map, the trends of the Covid-19 pandemic by countries, with the option of comparing countries in multiple user-selected data categories in line- and barcharts.</div><br>
+# Covid-19 Dashboard
 
-The dashboard is deployed with Streamlit and can be found [here](https://share.streamlit.io/orosz-attila/covid-19-dashboard).
+<p align="justify">Interactive dashboard with daily update displaying 23 Covid-19 related data categories on plotly map and charts. According to the user selection criteria, the daily data can be displayed on a scatter world map, the trends of country data in line- and barcharts, with the option of comparing countries in multiple data categories.</p>
 
-The notebook with detailed comments and plotly interactivy is also available on [Jupyter Colab](https://drive.google.com/file/d/1StLDRJ7LVoPS10AULBxVOJo8rDqnt3U8/view?usp=sharing).
+<p align="justify">The dashboard is <a href="https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app" target="_blank">deployed with Streamlit</a> and can be found here:<p>
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/orosz-attila/covid-19-dashboard) 
+
+<p align="justify">A separate repository with updates is available <a href="https://github.com/orosz-attila/Covid-19-Dashboard" target="_blank">here</a>.</p>
+
+<p align="justify">The notebook of this dashboard project with detailed comments is also available on <a href="https://colab.research.google.com/drive/1StLDRJ7LVoPS10AULBxVOJo8rDqnt3U8" target="_blank">Jupyter Colab</a>.</p>
+
 
