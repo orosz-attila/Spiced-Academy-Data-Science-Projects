@@ -18,6 +18,10 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 ## 12. Final Project - Covid-19 Dashboard
 
+
+https://user-images.githubusercontent.com/89396215/154562196-b325952a-d5ba-460e-94f4-ae3114455fe6.mov
+
+
 <p align="justify">Interactive dashboard with daily update displaying 23 Covid-19 related data categories on plotly map and charts. According to the user selection criteria, the daily data can be displayed on a scatter world map, the trends of country data in line- and barcharts, with the option of comparing countries in multiple data categories.</p>
 
 <p align="justify">The dashboard is <a href="https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app" target="_blank">deployed with Streamlit</a> and can be found here:<p>
