@@ -18,8 +18,13 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 ## 12. Final Project - Covid-19 Dashboard
 
-
 https://user-images.githubusercontent.com/89396215/154562196-b325952a-d5ba-460e-94f4-ae3114455fe6.mov
+
+
+https://user-images.githubusercontent.com/89396215/154564184-e39a2c74-825c-4063-b4c1-04924abe5c84.mov
+
+
+https://user-images.githubusercontent.com/89396215/154564189-415b9fff-b6e9-4265-891c-bf9808465435.mov
 
 
 <p align="justify">Interactive dashboard with daily update displaying 23 Covid-19 related data categories on plotly map and charts. According to the user selection criteria, the daily data can be displayed on a scatter world map, the trends of country data in line- and barcharts, with the option of comparing countries in multiple data categories.</p>
