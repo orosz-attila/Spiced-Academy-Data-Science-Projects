@@ -16,6 +16,10 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 ![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/01_visual_data_analysis_animated_scatterplot/images/animation.gif)
 
+## 10. Recommender system 
+
+Coming soon... 
+
 ## 12. Final Project - Covid-19 Dashboard
 
 <p align="justify">Interactive dashboard with daily update displaying 23 Covid-19 related data categories on plotly map and charts. According to the user selection criteria, the daily data can be displayed on a scatter world map, the trends of country data in line- and barcharts, with the option of comparing countries in multiple data categories.</p>
