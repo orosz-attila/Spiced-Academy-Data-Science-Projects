@@ -26,6 +26,9 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 <div align="justify">My notebook for creating the recommendation model is also available on <a href="https://colab.research.google.com/drive/1hqZ6X0jy_CcB1tlPvQHUcGcFvkryhkZK" target="_blank">Jupyter Colab</a>. (Comparing NMF and SVD algorythms and tuning parameters with Gridsearch, cross validation with RMSE and MAE scores.)</div><br> 
 
 
+<p align="justify">A separate repository with updates is available <a href="https://github.com/orosz-attila/Movie-Recommender" target="_blank">here</a>.</p>
+
+
 https://user-images.githubusercontent.com/89396215/154991104-fc451eea-d8eb-4489-af85-b5b7b7c51ddb.mov
 
 
