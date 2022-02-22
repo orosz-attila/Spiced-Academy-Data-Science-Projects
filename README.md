@@ -21,9 +21,11 @@ The goal of this project was to built a machine learning model to predict the su
 
 Based on the Exploratory Data Analysis (plotted missing values and the correlation between survival and the different data categories) selected the most significant features and dropped the ones which cannot contribute to accurate prediction. 
 
-In feature engineering, I applied 1) One-hot-encoding to convert categorical variables into binary features, 2) Imputing to fill missing values and 3) Scaling to normalize continous numerical variable in range 0.0 - 1.0. 
+In feature engineering using ColumnTransformer, I applied 1) OneHotEncoder: to convert categorical variables into binary features, 2) SimpleImputer: to fill missing values and 3) MinMaxScaler: to normalize continous numerical variable in range 0.0 - 1.0. 
 
+After trained data with scikit-learn's LogisticRegression, RandomForestClassifier and DecisionTreeClassifier models. After evaluating models scores and cross validation with mean accuracy score 0,79 +- 2.013, I kept the LogisticRegression model for prediction.      
 
+The notebook of this project available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/02_classification_titanic_challange/2.%20Project%20Classification%20-%20Titanic%20ML%20Challenge%20.ipynb).
 
 Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic/overview).<br>
 
