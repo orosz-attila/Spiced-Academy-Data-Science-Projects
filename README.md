@@ -3,8 +3,7 @@
 </p>
 
 
-<div align="justify">This repository contains the projects I completed during a Data Science Bootcamp at SPICED Academy from September to December 2021. These are not finalized versions, yet. I am continously refactoring, correcting and updating the codes during 
-January, 2022.</div>
+<div align="justify">This repository contains the projects I completed during a Data Science Bootcamp at SPICED Academy from September to December 2021. These are not finalized versions, yet. I am continously refactoring, correcting and updating the codes.</div>
 
 ## 01. Visual Data Analysis - Animated Scatterplot
 
@@ -16,9 +15,41 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 ![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/01_visual_data_analysis_animated_scatterplot/images/animation.gif)
 
-## 10. Recommender system 
+## 02. Supervised Machine Learning: Classification - Kaggle's Titanic Challenge
 
-Coming soon... 
+<div align="justify"></div>
+
+<div align="justify"> The goal of this project was to built a machine learning model to predict the survival of Titanic passenger based on the features in the dataset of Kaggle's  Titanic - Machine Learning from Disaster.</div><br> 
+
+<div align="justify">Based on the Exploratory Data Analysis (plotted missing values and the correlation between survival and the different data categories) selected the most significant features and dropped the ones which cannot contribute to accurate prediction. In feature engineering using ColumnTransformer, I applied 1) OneHotEncoder: to convert categorical variables into binary features, 2) SimpleImputer: to fill missing values and 3) MinMaxScaler: to normalize continous numerical variable in range 0.0 - 1.0. The data was trained on Scikit-learn's LogisticRegression, RandomForestClassifier and DecisionTreeClassifier models. After evaluating different model's accuracy scores and cross validation, I kept the LogisticRegression model for prediction (cross validation: mean accuracy score 0,79 +- 2.013).</div><br> 
+
+The notebook of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/02_classification_titanic_challange/2.%20Project%20Classification%20-%20Titanic%20ML%20Challenge%20.ipynb).
+
+Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic/overview).<br>
+
+
+## 03. Supervised Machine Learning: Regression - Kaggle's 
+
+## 10. Recommender systems - Movie Recommender with Collaborative Filtering
+
+<div align="justify">The movie recommender is based on the Collaborative Filtering approach, and creates predictions for movie ratings with Matrix Factorization technique, more precisely, the SVD (Singular Value Decomposition) algorythm of the <a href="https://surprise.readthedocs.io/en/stable/" target="_blank">SurPRISE library</a>. It is trained on 'small' dataset of <a href="https://grouplens.org/datasets/movielens/" target="_blank">MovieLens</a>.</div><br> 
+
+<p align="justify">The online user-interface is built and <a href="https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app" target="_blank">deployed with Streamlit</a> and can be found here:<p>
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/orosz-attila/movie-recommender/main) 
+    
+<div align="justify">My notebook for creating the recommendation model is also available on <a href="https://colab.research.google.com/drive/1hqZ6X0jy_CcB1tlPvQHUcGcFvkryhkZK" target="_blank">Jupyter Colab</a>. (Comparing NMF and SVD algorythms and tuning parameters with Gridsearch, cross validation with RMSE and MAE scores.)</div><br> 
+
+
+<p align="justify">A separate repository with updates is available <a href="https://github.com/orosz-attila/Movie-Recommender" target="_blank">here</a>.</p>
+
+
+https://user-images.githubusercontent.com/89396215/154991104-fc451eea-d8eb-4489-af85-b5b7b7c51ddb.mov
+
+
+https://user-images.githubusercontent.com/89396215/154570563-e80c6bd9-759e-43ed-ae83-81e8727a1dd3.mov
+
+<br>
 
 ## 12. Final Project - Covid-19 Dashboard
 
