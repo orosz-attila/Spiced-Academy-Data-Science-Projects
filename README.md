@@ -15,6 +15,21 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 ![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/01_visual_data_analysis_animated_scatterplot/images/animation.gif)
 
+## 02. Supervised Machine Learning: Classification - Kaggle's Titanic Challenge
+
+The goal of this project was to built a machine learning model to predict the survival of Titanic passenger based on the features in the dataset of Kaggle's  Titanic - Machine Learning from Disaster. 
+
+Based on the Exploratory Data Analysis (plotted missing values and the correlation between survival and the different data categories) selected the most significant features and dropped the ones which cannot contribute to accurate prediction. 
+
+In feature engineering, I applied 1) One-hot-encoding to convert categorical variables into binary features, 2) Imputing to fill missing values and 3) Scaling to normalize continous numerical variable in range 0.0 - 1.0. 
+
+
+
+Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic/overview).<br>
+
+
+## 03. Supervised Machine Learning: Regression - Kaggle's 
+
 ## 10. Recommender systems - Movie Recommender with Collaborative Filtering
 
 <div align="justify">The movie recommender is based on the Collaborative Filtering approach, and creates predictions for movie ratings with Matrix Factorization technique, more precisely, the SVD (Singular Value Decomposition) algorythm of the <a href="https://surprise.readthedocs.io/en/stable/" target="_blank">SurPRISE library</a>. It is trained on 'small' dataset of <a href="https://grouplens.org/datasets/movielens/" target="_blank">MovieLens</a>.</div><br> 
