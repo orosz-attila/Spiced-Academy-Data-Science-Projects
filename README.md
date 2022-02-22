@@ -21,7 +21,7 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
 <div align="justify">Based on the Exploratory Data Analysis (plotted missing values and the correlation between survival and the different data categories) selected the most significant features and dropped the ones which cannot contribute to accurate prediction. In feature engineering using ColumnTransformer, I applied 1) OneHotEncoder: to convert categorical variables into binary features, 2) SimpleImputer: to fill missing values and 3) MinMaxScaler: to normalize continous numerical variable in range 0.0 - 1.0. The data was trained on Scikit-learn's LogisticRegression and RandomForestClassifier models. After evaluating different model's accuracy scores and cross validation, I kept the LogisticRegression model for prediction (cross validation: mean accuracy score 81.28 +- 3.98 %).</div><br> 
 
-The notebook of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/02_classification_titanic_challange/2.%20Project%20Classification%20-%20Titanic%20ML%20Challenge%20.ipynb).
+The notebook of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/02_classification_titanic_challange/2.%20Classification%20-%20Titanic%20ML%20Challenge%20.ipynb).
 
 Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic/overview).<br>
 
