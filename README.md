@@ -28,14 +28,41 @@ Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kagg
 
 ## 03. Supervised Machine Learning: Regression - Bicycle Rental Forecast
 
-<div align="justify">The goal of this project is to build a regression model, in order to predict the total number of rented bycicles in each hour based on time and weather features, optimizing the accuracy of the model for RMSLE, using Kaggle's "Bike Sharing Demand" dataset that provides hourly rental data spanning two years.</div><br> 
+<div align="justify">The goal of this project was to build a regression model, in order to predict the total number of rented bycicles in each hour based on time and weather features, optimizing the accuracy of the model for RMSLE, using Kaggle's "Bike Sharing Demand" dataset that provides hourly rental data spanning two years.</div><br> 
 
-<div align="justify">After extracting datetime features, highly correlated variables were dropped via feature selection (correlation analysis, Variance Inflation Factor) to avoid multicollienarity. I compared more linear regression models with one another (PossionRegressor, PolinomialFeatures, Lasso, Ridge, RandomForestRegressor) based on R2 and RMSLE scores. After evaluating the different models, I kept the RandomForestRegressor, and applied GridSearchCV and cross validation to ensure the best fit, finally submitted the predictions with 0.47210 RMSLE.</div><br>
+<div align="justify">After extracting datetime features, some highly correlated variables were dropped via feature selection (correlation analysis, Variance Inflation Factor) to avoid multicollienarity. I compared more linear regression models with one another (PossionRegressor, PolinomialFeatures, Lasso, Ridge, RandomForestRegressor) based on R2 and RMSLE scores. After evaluating the different models, I kept the RandomForestRegressor, and applied GridSearchCV and cross validation to ensure the best fit, finally submitted the predictions with 0.47210 RMSLE.</div><br>
 
 The notebook of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/03_regression_bycicle_rental_prediction/03_project_bycicle_rental_forecast.ipynb).
 
 
-Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing-demand/data).<br>
+## 04. Natural Language Processing (NLP): Text Classification
+
+The main goal of this project was to build a text classification model on song lyrics to predict the artist from a piece of text, additionally, to make user-inputs ((artists, lyrics) possible in CLI. 
+
+Through web scraping with BeautifulSoup, the song-lyrics of selected artists are extracted from lyrics.com. During the text pre-processing, word-tokenizer and word-lemmatizer of Natural Language Toolkit (NLTK) is used to "clean" the extracted texts and create the corpus: 1) TreebankWordTokenizer() splits the text into list of words and removes all other punctuation marks, 2) WordNetLemmatizer() reverts words back to their root/base. These steps are required to import and download lexical database such as WordNet. WordNet's Stopwords also removes the most common English words from the corpus.  
+
+In the model pipeline, Tfidfvectorizer (TF-IDF) transforms the words of the corpus into a matrix, count-vectorizes and normalizes them at once by default. For classification, the multinomial Naive Bayes classifier MultinomialNB() was used which is suitable for classification with discrete features like word counts for text classification. 
+
+
+## 05. Dashboard (SQL, Cloud Computing)
+
+Coming soon... 
+
+## 06. The Data Pipeline: Tweets Sentiment Analysis
+
+Coming soon... 
+
+## 07. Time Series Analysis: Wheather Forecast
+
+Coming soon...
+
+## 08. Markov Simulation: Predicting customer behaviour in a supermarket.
+
+Coming soon...
+
+## 09. Deep Learning
+
+Coming soon...
 
 ## 10. Recommender systems - Movie Recommender with Collaborative Filtering
 
