@@ -1,21 +1,23 @@
-import requests
-from bs4 import BeautifulSoup
-
-from nltk.tokenize import TreebankWordTokenizer
-# import nltk  
+# only done once! we have to download the WordNet database locally
+# import nltk 
 # nltk.download("wordnet") 
-from nltk.stem import WordNetLemmatizer
-
 # nltk.download('stopwords')
+
+
+import requests
+import os
+from bs4 import BeautifulSoup
+from nltk.tokenize import TreebankWordTokenizer
+from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
-# from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import MultinomialNB
+
 
 def get_links(artist, number): 
     """
-    This function extracts the links to each songlyrics of the artist selected by the user, 
+    This function extracts the links to each song-lyrics of the artist selected by the user, 
     and returns a list of links to the song pages with the number selected by the user.   
     """
     
@@ -27,15 +29,15 @@ def get_links(artist, number):
     for link in extracted_links[:number]:
         song_url = 'https://www.lyrics.com/' + link
         links_list.append(song_url)
-    #print (artist, 'has', len(links_list), 'lyrics')
     return links_list
 
 
 def get_corpus(links_list):
-    """  This function creates a list of the lyrics (with the number selected by the user) for one artist, 
+    """  
+    This function creates a list of the lyrics (with the number selected by the user) for one artist, 
     and returns a list of strings (CORPUS), in which each songlyric is an item. 
-         If a lyric is already in the list, it does no append it one more time in the list. The iteration restarts.
-         If no lyrics from the website can be extracted, it will be passed. 
+    If a lyric is already in the list, it does no append it one more time in the list. The iteration restarts.
+    If no lyrics from the website can be extracted, it will be passed. 
     """
 
     CORPUS = []
@@ -51,7 +53,6 @@ def get_corpus(links_list):
                 CORPUS.append(song_lyrics) 
         except: 
             pass 
-    # print(len(CORPUS))
     return CORPUS
 
 
@@ -75,13 +76,12 @@ def corpus_cleaner(CORPUS):
     return CLEAN_CORPUS
 
 
-def creating_labels(artist1, artist2, number):
+def creating_labels(artist1, artist2, corpus1, corpus2):
     '''
     This function takes the entered artist names and multiplies them with the number of songs selected by the users
     and returns the label as a list. 
     '''
-
-    LABELS = [artist1] * number + [artist2] * number
+    LABELS = [artist1] * len(corpus1) + [artist2] * len(corpus2)
     return LABELS
 
 
@@ -91,19 +91,15 @@ def ml_model (CLEAN_CORPUS, LABELS, text):
     Stopwords will remove the most common English words from the Corpus. 
     Classification model: MultinomialNB (Naive Bayes) 
     """
-
+    text = ' '.join(text)
     STOPWORDS = stopwords.words('english')
 
-    model = [('tf_idf', TfidfVectorizer(stop_words=STOPWORDS)),
-                ('MNB', MultinomialNB())
+    model = [('tf_idf', TfidfVectorizer(max_features = 1000, min_df = 2, max_df = 0.5, ngram_range = (1,2), stop_words=STOPWORDS)),
+            ('MNB', MultinomialNB(alpha = 0.1))
     ]
 
     pipeline = Pipeline(model)
     pipeline.fit(CLEAN_CORPUS, LABELS)
-    prediction = str(pipeline.predict([text]))  
-    print(f'These lyrics are more likely to be written by {prediction}')
-    # print(prediction)
-
-
-# if __name__ == "__main__":
-#     pass  
+    prediction = pipeline.predict([text]) 
+    probability = pipeline.predict_proba([text]).max().round(2)*100
+    print(f'These lyrics are more likely ({probability} %) to be written by: {prediction[0]}')
