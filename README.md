@@ -24,7 +24,7 @@ Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 The notebook of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/02_classification_titanic_challange/2.%20Classification%20-%20Titanic%20ML%20Challenge%20.ipynb).
 
 Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kaggle.com/c/titanic/overview).<br>
-
+<br>
 
 ## 03. Supervised Machine Learning: Regression - Bicycle Rental Forecast
 
@@ -33,12 +33,9 @@ Data source: [Kaggle: Titanic - Machine Learning from Disaster](https://www.kagg
 <div align="justify">After extracting datetime features, some highly correlated variables were dropped via feature selection (correlation analysis, Variance Inflation Factor) to avoid multicollienarity. I compared more linear regression models with one another (PossionRegressor, PolinomialFeatures, Lasso, Ridge, RandomForestRegressor) based on R2 and RMSLE scores. After evaluating the different models, I kept the RandomForestRegressor, and applied GridSearchCV and cross validation to ensure the best fit, finally submitted the predictions with 0.47210 RMSLE.</div><br>
 
 The notebook of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/03_regression_bycicle_rental_prediction/03_project_bycicle_rental_forecast.ipynb).
-
+<br>
 
 ## 04. Natural Language Processing (NLP): Text Classification
-
-<div align="justify"></div><br> 
-
 
 <div align="justify">The main goal of this project was to build a text classification model on song lyrics to predict the artist from a piece of text, additionally, to make user-inputs ((artists, lyrics) possible in CLI.</div><br> 
 
@@ -49,6 +46,7 @@ The notebook of this project is available [here](https://github.com/orosz-attila
 2 versions of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/04_nlp_text_classification).
 
 ![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_nlp_text_classification/text_classification.gif)
+<br>
 
 ## 05. Dashboard (SQL, Cloud Computing)
 
