@@ -48,7 +48,7 @@ Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing
 
 2 versions of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/04_nlp_text_classification).
 
-![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_nlp_text_classification/text_classification.gif)
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_nlp_text_classification/text_classification.gif)<br>
 <br>
 
 ## 05. Dashboard (SQL, Cloud Computing)
