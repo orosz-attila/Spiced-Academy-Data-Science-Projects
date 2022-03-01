@@ -46,9 +46,9 @@ The notebook of this project is available [here](https://github.com/orosz-attila
  
 <div align="justify">In the model pipeline, Tfidfvectorizer (TF-IDF) transforms the words of the corpus into a matrix, count-vectorizes and normalizes them at once by default. For classification, the multinomial Naive Bayes classifier MultinomialNB() was used which is suitable for classification with discrete features like word counts for text classification. </div><br>
 
-2 versions of this project is available [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/04_text_classification_song_lyrics).
+2 versions of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/04_nlp_text_classification).
 
-![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_text_classification_song_lyrics/text_classification.gif)
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_nlp_text_classification/text_classification.gif)
 
 ## 05. Dashboard (SQL, Cloud Computing)
 

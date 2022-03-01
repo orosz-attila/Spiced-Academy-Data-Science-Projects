@@ -16,6 +16,4 @@ I built 2 versions:
 
 ### Testing in CLI 
 
-![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_text_classification_song_lyrics/text_classification.gif)
-
-
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_nlp_text_classification/text_classification.gif)
