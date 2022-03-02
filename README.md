@@ -44,7 +44,7 @@ Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing
 
 <div align="justify">Through web scraping with BeautifulSoup, the song-lyrics of selected artists are extracted from lyrics.com. During the text pre-processing, word-tokenizer and word-lemmatizer of Natural Language Toolkit (NLTK) is used to "clean" the extracted texts and create the corpus: 1) TreebankWordTokenizer() splits the text into list of words and removes all other punctuation marks, 2) WordNetLemmatizer() reverts words back to their root/base. These steps are required to import and download lexical database such as WordNet. WordNet's Stopwords also removes the most common English words from the corpus. </div><br>
  
-<div align="justify">In the model pipeline, Tfidfvectorizer (TF-IDF) transforms the words of the corpus into a matrix, count-vectorizes and normalizes them at once by default. For classification, the multinomial Naive Bayes classifier MultinomialNB() was used which is suitable for classification with discrete features like word counts for text classification. </div><br>
+<div align="justify">In the model pipeline, Tfidfvectorizer (TF-IDF) transforms the words of the corpus into a matrix, count-vectorizes and normalizes them at once by default. For classification, the multinomial Naive Bayes classifier MultinomialNB() was used which is suitable for classification with discrete features like word counts for text classification.</div><br>
 
 2 versions of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/04_nlp_text_classification).
 
@@ -67,11 +67,27 @@ Coming soon...
 
 <div align="justify">For the sentiment analysis, SentimentIntensityAnalyzer() of the the Vader library  (Valence Aware Dictionary and sEntiment Reasoner) was used.</div><br>
 
-The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/06_data_pipeline_tweets_sentiment_analysis).
+The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/06_data_pipeline_tweets_sentiment_analysis).<br>
+<br>
 
-## 07. Time Series Analysis: Wheather Forecast
+## 07. Time Series Analysis: Temperature Forecast
 
-Coming soon...
+<div align="justify"></div><br>
+
+<div align="justify">In this project, I applied the ARIMA model for a short-term temperature forecast. After visualizing the trend, the seasonality and the remainder of the time series data (daily mean temperature in Berlin-Treptow from 1979-2020), I run tests such as ADF and KPSS for checking stationarity (time dependence).</div><br> 
+
+<div align="justify">For determining the parameters of the ARIMA model (p, d, q), I present two approaches:</div><br> 
+
+  1. Inspecting the lags of the Autocorrelation (ACF) and Partial Auto Correlation Functions (PACF) plots. 
+  2. Using alkaline-ml Auto-Arima process which automatically finds the most optimal order setting that has the lowest AIK. 
+
+<div align="justify">The prediction with the tuned ARIMA model achieved a MAE score as low as 1.72.</div><br>
+
+The notebook with plotly interactivy is also available on [Jupyter Colab](https://colab.research.google.com/drive/1nRPrfqCVFn-EHhl5GenxREuNRYeWV_h8#scrollTo=PynGYIu55aHb).<br>
+
+
+Data source: [European Climate Assessment Dataset](https://www.ecad.eu).<br>
+<br>
 
 ## 08. Markov Simulation: Predicting customer behaviour in a supermarket.
 
