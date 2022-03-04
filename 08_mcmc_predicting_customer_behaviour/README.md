@@ -22,7 +22,7 @@ The project involved the following tasks:
 6. simulation/mcmc_visualization.py
 
 
-gif
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/08_mcmc_predicting_customer_behaviour/images/mcmc_simulation.gif)
 
 ### To DO:
 - Update simulation with dynamic lambda according to the customer database. At the moment, the simulation is running with 2 customer entering per minute. (this is the lambda at the random.Poisson() distbribution)

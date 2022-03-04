@@ -100,7 +100,7 @@ The project included the following tasks:
 5. Extending the simulation to multiple customers
 6. Animation/Visualization ..
 
-gif<br>
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/08_mcmc_predicting_customer_behaviour/images/mcmc_simulation2.gif)<br>
 <br>
 
 ## 09. Deep Learning
