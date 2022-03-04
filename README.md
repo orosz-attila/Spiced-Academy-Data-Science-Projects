@@ -98,10 +98,9 @@ The project included the following tasks:
 3. Implementing a Customer Class
 4. Running MCMC (Markov-Chain Monte-Carlo) simulation for a single class customer 
 5. Extending the simulation to multiple customers
-6. Animation/Visualization ..
+6. Animation/Visualization
 
-![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/08_mcmc_predicting_customer_behaviour/images/mcmc_simulation2.gif)<br>
-<br>
+The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/08_mcmc_predicting_customer_behaviour).<br>
 
 ## 09. Deep Learning
 
