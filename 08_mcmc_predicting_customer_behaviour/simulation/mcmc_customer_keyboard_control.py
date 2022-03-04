@@ -1,20 +1,14 @@
 """
-Visualization of a MCMC simulation of a supermarket.
+This script visualizes the layout of the supermarket, and places one customer avatar in it. 
+The w,a,s,d keys can control the direction of the next move of customer avatar.
 
-Uses the A*-Algorithm to find paths on the grid.
-
-Run: python mcmc_supermarket_visualization.py
-
+Run: python customer_keyboard_control.py
 """
 
-# from unicodedata import name
 import numpy as np
 import cv2
-import time 
-from mcmc_supermarket_simulator import Customer, locations, prob_matrix
+import random
 
-
-POSSIBLE_MOVES = [(0,1),(0,-1),(1,0),(-1,0)]
 
 # size of a tile (32*32 pixels = 1 tile)
 TILE_SIZE = 32
@@ -23,7 +17,7 @@ TILE_SIZE = 32
 OFS = 50                    
 
 # represantation of the market with one symbol '#', '.', 'b' or similar for each tile on the png-file
-MARKET = """
+LAYOUT = """
 ##################
 ##..............##
 #D..DS..SB..BV..V#
@@ -39,7 +33,7 @@ MARKET = """
 """.strip()
 
 
-class SupermarketMap:
+class TilesMap:
     """Constructor for the map, Visualizes the supermarket layout(MARKET) with extracting the icons from the tiles"""
 
     def __init__(self, layout, tiles):
@@ -109,24 +103,24 @@ class Customer:
     Customer class that models the customer behavior in a supermarket.
     """
 
-    def __init__(self, supermarket, avatar, row, col):
+    def __init__(self, map, avatar, row, col):
         """
         supermarket: A SuperMarketMap object
         avatar : a numpy array containing a 32x32 tile image
         row: the starting row
         col: the starting column
         """
-        self.name = "whatever"
-        self.supermarket =supermarket
+        # self.name = "whatever"
+        self.map =map
         self.avatar = avatar
         self.row = row
         self.col = col
 
     def draw(self, frame):
         '''# places the customer-object onto the map'''
-        x = self.col * TILE_SIZE
-        y = self.row * TILE_SIZE
-        frame[y:y+TILE_SIZE, x:x+TILE_SIZE] = self.avatar
+        x = self.row * TILE_SIZE
+        y = self.col * TILE_SIZE
+        frame[x:x+TILE_SIZE, y:y+TILE_SIZE] = self.avatar
 
     def move(self, direction):
         new_row = self.row
@@ -144,29 +138,32 @@ class Customer:
         if direction == 'left':
             new_col -= 1
 
-        if self.supermarket.contents[new_row][new_col] == '.':
+        if self.map.contents[new_row][new_col] == '.':
             self.col = new_col
             self.row = new_row
 
     def __repr__(self):
         '''returns where the customer is drawn, if no errors occur'''
         return f"customer at {self.row}/{self.col}"
+        
 
 if __name__ == "__main__":
 
     background = np.zeros((500, 700, 3), np.uint8)
     tiles = cv2.imread("tiles.png")
     
-    # Instantiating a Supermarket object 
-    market = SupermarketMap(MARKET, tiles)
+    # Instantiating a SupermarketMap object 
+    map = TilesMap(LAYOUT, tiles)
 
-    avatar = tiles[3*TILE_SIZE:4*TILE_SIZE,1*TILE_SIZE:2*TILE_SIZE] # this one gives a pacman
+    # this one gives a pacman from tiles.png, it loads the icon at (3,1)
+    avatar = tiles[3*TILE_SIZE:4*TILE_SIZE,1*TILE_SIZE:2*TILE_SIZE]
+
      # Instantiating a Customer object 
-    customer = Customer(market, avatar, 10, 15)
+    customer = Customer(map, avatar, 10, 15)
 
     while True:
         frame = background.copy()
-        market.draw(frame)
+        map.draw(frame)
         customer.draw(frame) 
 
         # https://www.ascii-code.com/
@@ -193,4 +190,4 @@ if __name__ == "__main__":
 
     cv2.destroyAllWindows()
 
-    market.write_image("supermarket.png")
+    map.write_image("supermarket.png")

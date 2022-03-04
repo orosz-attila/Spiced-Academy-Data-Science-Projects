@@ -89,7 +89,19 @@ Data source: [European Climate Assessment Dataset](https://www.ecad.eu).<br>
 
 ## 08. Markov Chain Monte Carlo (MCMC): Predicting and simulating customer behaviour in a supermarket.
 
-Coming soon...
+<div align="justify">The goal of this project was predicting and visualizing customer behaviour between departments/aisles in a supermarket, applying Markov Chain modeling and Monte-Carlo simulation.</div><br>
+
+The project included the following tasks:
+
+1. EDA, Data Wrangling
+2. Calculating Transition Probabilities between the aisles
+3. Implementing a Customer Class
+4. Running MCMC (Markov-Chain Monte-Carlo) simulation for a single class customer 
+5. Extending the simulation to multiple customers
+6. Animation/Visualization ..
+
+gif<br>
+<br>
 
 ## 09. Deep Learning
 
