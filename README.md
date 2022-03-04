@@ -9,7 +9,7 @@
 
 <div align="justify">This animated scatterplot visualizes the changes of countries' fertility rate, life expectancy and population between 1960 and 2015. The sizes of the scatters represents the population of each country, the colours shows in which continent they can be found.</div><br>
 
-The notebook with detailed comments and plotly interactivy is also available on [Jupyter Colab](https://colab.research.google.com/drive/1lzhl7rgZrw2-1RxhsBOEjXzb86fvKp2n).<br>
+The notebook with detailed comments and plotly interactivity is also available on [Jupyter Colab](https://colab.research.google.com/drive/1lzhl7rgZrw2-1RxhsBOEjXzb86fvKp2n).<br>
 
 Data source: [Gapminder Foundation](https://www.gapminder.org/data/).<br>
 
@@ -40,7 +40,7 @@ Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing
 
 ## 04. Natural Language Processing (NLP): Text Classification
 
-<div align="justify">The main goal of this project was to build a text classification model on song lyrics to predict the artist from a piece of text, additionally, to make user-inputs ((artists, lyrics) possible in CLI.</div><br> 
+<div align="justify">The main goal of this project was to build a text classification model on song lyrics to predict the artist from a piece of text, additionally, to make user-inputs (artists, lyrics) possible in CLI.</div><br> 
 
 <div align="justify">Through web scraping with BeautifulSoup, the song-lyrics of selected artists are extracted from lyrics.com. During the text pre-processing, word-tokenizer and word-lemmatizer of Natural Language Toolkit (NLTK) is used to "clean" the extracted texts and create the corpus: 1) TreebankWordTokenizer() splits the text into list of words and removes all other punctuation marks, 2) WordNetLemmatizer() reverts words back to their root/base. These steps are required to import and download lexical database such as WordNet. WordNet's Stopwords also removes the most common English words from the corpus. </div><br>
  
@@ -81,7 +81,7 @@ The folder of this project can be found [here](https://github.com/orosz-attila/S
 
 <div align="justify">The prediction with the tuned ARIMA model achieved a MAE score as low as 1.72.</div><br>
 
-The notebook with plotly interactivy is also available on [Jupyter Colab](https://colab.research.google.com/drive/1nRPrfqCVFn-EHhl5GenxREuNRYeWV_h8#scrollTo=PynGYIu55aHb).<br>
+The notebook with plotly interactivity is also available on [Jupyter Colab](https://colab.research.google.com/drive/1nRPrfqCVFn-EHhl5GenxREuNRYeWV_h8#scrollTo=PynGYIu55aHb).<br>
 
 
 Data source: [European Climate Assessment Dataset](https://www.ecad.eu).<br>

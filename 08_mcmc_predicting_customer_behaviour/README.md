@@ -23,7 +23,7 @@ The project involved the following tasks:
 4. simulation/mcmc_customer_control_keyboard.py
 5. simulation/mcmc_simulator.py
 6. simulation/mcmc_visualization.py
-<br>
+
 
 ### To Do:
 - Update simulation with dynamic lambda according to the customer database. At the moment, the simulation is running with 2 customer entering per minute. (this is the lambda at the random.Poisson() distbribution)
