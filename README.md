@@ -72,8 +72,6 @@ The folder of this project can be found [here](https://github.com/orosz-attila/S
 
 ## 07. Time Series Analysis: Temperature Forecast
 
-<div align="justify"></div><br>
-
 <div align="justify">In this project, I applied the ARIMA model for a short-term temperature forecast. After visualizing the trend, the seasonality and the remainder of the time series data (daily mean temperature in Berlin-Treptow from 1979-2020), I run tests such as ADF and KPSS for checking stationarity (time dependence).</div><br> 
 
 <div align="justify">For determining the parameters of the ARIMA model (p, d, q), I present two approaches:</div><br> 
@@ -89,7 +87,7 @@ The notebook with plotly interactivy is also available on [Jupyter Colab](https:
 Data source: [European Climate Assessment Dataset](https://www.ecad.eu).<br>
 <br>
 
-## 08. Markov Simulation: Predicting customer behaviour in a supermarket.
+## 08. Markov Chain Monte Carlo (MCMC): Predicting and simulating customer behaviour in a supermarket.
 
 Coming soon...
 

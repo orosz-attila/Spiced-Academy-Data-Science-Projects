@@ -1,3 +1,4 @@
+## 02. Supervised Machine Learning: Classification - Kaggle's Titanic Challenge
 
 <div align="justify"> The goal of this project was to built a machine learning model to predict the survival of Titanic passenger based on the features in the dataset of Kaggle's  Titanic - Machine Learning from Disaster.</div><br> 
 

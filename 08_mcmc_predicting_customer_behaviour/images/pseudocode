@@ -1,0 +1,12 @@
+Pseudocode:
+
+    increase the time of the supermarket by one minute
+
+    for every customer determine their next state
+
+    remove churned customers from the supermarket
+
+    generate new customers at their initial location
+
+    repeat from step 1
+

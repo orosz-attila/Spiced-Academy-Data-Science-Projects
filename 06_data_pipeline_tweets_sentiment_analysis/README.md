@@ -9,6 +9,3 @@
 
 
 <div align="justify">For the sentiment analysis, SentimentIntensityAnalyzer() of the the Vader library (Valence Aware Dictionary and sEntiment Reasoner) was used.</div><br>
-
-
-The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/06_data_pipeline_tweets_sentiment_analysis).
