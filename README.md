@@ -53,7 +53,8 @@ Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing
 
 ## 05. Dashboard (SQL, Cloud Computing)
 
-Coming soon... 
+Coming soon...
+ 
 
 ## 06. The Data Pipeline: Tweets Sentiment Analysis
 
@@ -93,7 +94,7 @@ Data source: [European Climate Assessment Dataset](https://www.ecad.eu).<br>
 
 The project included the following tasks:
 
-1. EDA, Data Wrangling
+1. Data Analysis
 2. Calculating Transition Probabilities between the aisles
 3. Implementing a Customer Class
 4. Running MCMC (Markov-Chain Monte-Carlo) simulation for a single class customer 
@@ -105,6 +106,7 @@ The folder of this project can be found [here](https://github.com/orosz-attila/S
 ## 09. Deep Learning
 
 Coming soon...
+
 
 ## 10. Recommender systems - Movie Recommender with Collaborative Filtering
 
@@ -126,6 +128,11 @@ https://user-images.githubusercontent.com/89396215/154991104-fc451eea-d8eb-4489-
 https://user-images.githubusercontent.com/89396215/154570563-e80c6bd9-759e-43ed-ae83-81e8727a1dd3.mov
 
 <br>
+
+## 11. Software Engineering
+
+...coming soon
+
 
 ## 12. Final Project - Covid-19 Dashboard
 

@@ -7,25 +7,32 @@
 
 The project involved the following tasks:
 
-1. EDA, Data Wrangling
-2. Calculating Transition Probabilities between the aisles
-3. Implementing a Customer Class
-4. Running MCMC (Markov-Chain Monte-Carlo) simulation for a single class customer 
-5. Extending the simulation to multiple customers
-6. Animation/Visualization 
+### 1. Data Analysis
 
+See the notebook/[mcmc_data_analysis.ipynb](link).
 
-### Steps of the project can be found in the following files:
+### 2. Calculating Transition Probabilities between the aisles  (5x5 crosstab)
 
-1. notebook/mcmc_transition_matrix.ipynb
-2. notebook/mcmc_transition_matrix.ipynb
-3. notebook/mcmc_customer_class.ipynb
-4. simulation/mcmc_customer_control_keyboard.py
-5. simulation/mcmc_simulator.py
-6. simulation/mcmc_visualization.py
+See the notebook/[mcmc_transition_matrix.ipynb](link).
+
+### 3. Creating a Customer Class
+
+See the notebook/[mcmc_customer_class.ipynb](link).
+
+### 4. Running MCMC (Markov-Chain Monte-Carlo) simulation for a single class customer 
+
+See the simulation/[mcmc_customer_control_keyboard.py](link).
+
+### 5. Extending the simulation to multiple customers
+
+See the simulation/[mcmc_simulator.py](link).
+
+### 6. Visualization of the supermarket layout and the simulation of the customer behaviour based on the transition probabilities.
+
+See the simulation/[mcmc_visualization.py](link).
 
 
 ### To Do:
-- Update simulation with dynamic lambda according to the customer database. At the moment, the simulation is running with 2 customer entering per minute. (this is the lambda at the random.Poisson() distbribution)
+- Update simulation with dynamic lambda according to the customer data. At the moment, the simulation is running with 2 customer entering per minute. (this is the lambda at the random.Poisson() distbribution)
 - Displaying the avatars at the exit location
 - Displaing path of the avatars' move between the locations 
