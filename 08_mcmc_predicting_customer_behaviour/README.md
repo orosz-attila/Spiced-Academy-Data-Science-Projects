@@ -9,27 +9,27 @@ The project involved the following tasks:
 
 ### 1. Data Analysis
 
-See the notebook/[mcmc_data_analysis.ipynb](link).
+See the notebook/[mcmc_data_analysis.ipynb](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/08_mcmc_predicting_customer_behaviour/notebooks/mcmc_data_analysis.ipynb).
 
 ### 2. Calculating Transition Probabilities between the aisles  (5x5 crosstab)
 
-See the notebook/[mcmc_transition_matrix.ipynb](link).
+See the notebook/[mcmc_transition_matrix.ipynb](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/08_mcmc_predicting_customer_behaviour/notebooks/mcmc_transition_matrix.ipynb).
 
 ### 3. Creating a Customer Class
 
-See the notebook/[mcmc_customer_class.ipynb](link).
+See the notebook/[mcmc_customer_class.ipynb](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/08_mcmc_predicting_customer_behaviour/notebooks/mcmc_customer_class.ipynb).
 
 ### 4. Running MCMC (Markov-Chain Monte-Carlo) simulation for a single class customer 
 
-See the simulation/[mcmc_customer_control_keyboard.py](link).
+See the simulation/[mcmc_customer_control_keyboard.py](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/08_mcmc_predicting_customer_behaviour/simulation/mcmc_customer_keyboard_control.py).
 
 ### 5. Extending the simulation to multiple customers
 
-See the simulation/[mcmc_simulator.py](link).
+See the simulation/[mcmc_simulator.py](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/08_mcmc_predicting_customer_behaviour/simulation/mcmc_simulator.py).
 
 ### 6. Visualization of the supermarket layout and the simulation of the customer behaviour based on the transition probabilities.
 
-See the simulation/[mcmc_visualization.py](link).
+See the simulation/[mcmc_visualization.py](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/08_mcmc_predicting_customer_behaviour/simulation/mcmc_visualization.py).
 
 
 ### To Do:

@@ -1,5 +1,5 @@
 """
-This script simulates customers using a Monte Carlo Markov Chain and produces CSV output.
+This script simulates customers using a Markov Chain Monte Carlo and produces output with Supermarket and Customer attributes.
 
 Run: python mcmc_simulator.py
 """
