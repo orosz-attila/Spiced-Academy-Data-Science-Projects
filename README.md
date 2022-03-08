@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/89396215/148706672-089e1b21-75b3-43a9-b8e4-85428337f7b8.png"/>
 </p>
 
-<div align="justify">This repository contains the projects I completed during a Data Science Bootcamp at SPICED Academy from September to December 2021. These are not finalized versions, yet. I am continously refactoring, correcting and updating the codes.</div>
+<div align="justify">This repository contains the projects I completed during a Data Science Bootcamp at SPICED Academy in Berlin from September to December 2021.</div>
 <br>
 
 ## 01. Visual Data Analysis - Animated Scatterplot
@@ -103,9 +103,20 @@ The project included the following tasks:
 
 The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/08_mcmc_predicting_customer_behaviour).<br>
 
-## 09. Deep Learning
+## 09. Deep Learning - Artificial Neural Network
 
-Coming soon...
+<div align="justify">The goal of this project was to build an Artificial Neural Network that recognizes objects on images made by the webcam:  </div><br>
+
+1. Implementing a Feed-Forward Neural Network
+2. Backpropagation from Scratch
+3. Building Neural Network with Keras
+4. Training Strategies / Hyperparameters of Neural Networks
+5. Convolutional Neural Networks (CNN) 
+6. Classifying images made with webcam with Pre-trained Networks (Comparing MobileNetV2, InceptionV3)
+7. Image Detection 
+8. Transfer Learning 
+
+The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/09_deep_learning).<br>
 
 
 ## 10. Recommender systems - Movie Recommender with Collaborative Filtering
