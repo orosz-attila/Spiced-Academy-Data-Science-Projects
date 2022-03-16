@@ -51,9 +51,17 @@ Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing
 ![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/04_nlp_text_classification/text_classification.gif)<br>
 <br>
 
-## 05. Dashboard (SQL, Cloud Computing)
+## 05. Building an Online Dashboard with Metabase, PostgreSQL and AWS
 
-Coming soon...
+In this project, I built an interactive online dashboard summarizing a sample database of a fictional company (“Northwind Traders”). The Northwind database contains all sales transactions between the company and its customers as well as purchases from suppliers. 
+
+The project included the following tasks:
+
+1. Creating a local SQL database and importing Northwind data .csv tables, adding primary keys and connecting tables with foreign keys  
+2. Running SQL queries for business analytics
+3. Cloud database: Creating an AWS RDS instance, creating a database dump locally, deploying Northwind data to the RDS instance
+4. Publishing the Dashboard in the Cloud: Installing Metabase on an EC2 Machine
+5. Building an interactive dashboard on a cloud server (with Metabase and AWS EC2)  
  
 
 ## 06. The Data Pipeline: Tweets Sentiment Analysis
