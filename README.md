@@ -90,7 +90,7 @@ Data source: [European Climate Assessment Dataset](https://www.ecad.eu).<br>
 
 ## 08. Markov Chain Monte Carlo (MCMC): Predicting and simulating customer behaviour in a supermarket.
 
-<div align="justify">The goal of this project was predicting and visualizing customer behaviour between departments/aisles in a supermarket, applying Markov Chain modeling and Monte-Carlo simulation.</div><br>
+<div align="justify">The goal of this project was to predict and visualize customer behaviour between departments/aisles in a supermarket, applying Markov Chain modeling and Monte-Carlo simulation.</div><br>
 
 The project included the following tasks:
 
@@ -107,6 +107,8 @@ The folder of this project can be found [here](https://github.com/orosz-attila/S
 
 <div align="justify">The goal of this project was to build an Artificial Neural Network that recognizes objects on images made by the webcam:  </div><br>
 
+The project included the following tasks:
+
 1. Implementing a Feed-Forward Neural Network
 2. Backpropagation from Scratch
 3. Building Neural Network with Keras
@@ -114,7 +116,6 @@ The folder of this project can be found [here](https://github.com/orosz-attila/S
 5. Convolutional Neural Networks (CNN) 
 6. Classifying images made with webcam with Pre-trained Networks (Comparing MobileNetV2, InceptionV3)
 7. Image Detection 
-8. Transfer Learning 
 
 The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/09_deep_learning).<br>
 
