@@ -2,10 +2,12 @@
 
 <div align="justify">In this project, I built an interactive online dashboard displaying sales data of a fictional company (Northwind Traders). The database was created from .csv files with PostgreSQL and hosted in a cloud database (AWS RDS). The dashboard was created with Metabase that was installed on a virtual server (AWS RC2) and connected to the cloud database.</div><br>
 
-<div align="justify">(Due to costs, both the AWS database and the virtual server has been deleted and dashboard is not available online anymore.)</div><br>
+<div align="justify">(Due to costs, both the AWS database and the virtual server has been deleted, therefore the dashboard is not available online anymore.)</div><br> 
+
+<div align="justify">The static screenshot of the dashboard (scroll down for gifs):</div><br> 
 
 <p align="center">
-  <img src="https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/c72cf4d72887b833f41c583211852dcdf4092abc/05_dashboard/image/northwind_traders_dashboard.png"/>
+  <img src="https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/c72cf4d72887b833f41c583211852dcdf4092abc/05_dashboard/image/northwind_traders_dashboard.png"/>
 </p>
 
 <br>
@@ -54,7 +56,7 @@
 
 #### 3.1. Setting up an AWS RDS (Relational Database Service) instance
 
-- See step-by-step description in [aws_rds_installation.sh]() 
+- See step-by-step description in [aws_rds_installation.sh](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/05_dashboard/aws_rds_installation.sh) 
 
 #### 3.2. Creating Northwind database on the RDS instance
 
