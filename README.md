@@ -53,24 +53,31 @@ Data source: [Kaggle: Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing
 
 ## 05. Building an Online Dashboard with Metabase, PostgreSQL and AWS
 
-In this project, I built an interactive online dashboard summarizing a sample database of a fictional company (“Northwind Traders”). The Northwind database contains all sales transactions between the company and its customers as well as purchases from suppliers. 
+<div align="justify">In this project, I built an interactive online dashboard displaying sales data of a fictional company (Northwind Traders). The database was created from .csv files with PostgreSQL and hosted in a cloud database (AWS RDS). The dashboard was created with Metabase that was installed on a virtual server (AWS RC2) and connected to the cloud database.</div><br> 
+
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/05_dashboard/image/dashboard_vizs.gif) 
+
 
 The project included the following tasks:
 
-1. Creating a local SQL database and importing Northwind data .csv tables, adding primary keys and connecting tables with foreign keys  
-2. Running SQL queries for business analytics
-3. Cloud database: Creating an AWS RDS instance, creating a database dump locally, deploying Northwind data to the RDS instance
-4. Publishing the Dashboard in the Cloud: Installing Metabase on an EC2 Machine
-5. Building an interactive dashboard on a cloud server (with Metabase and AWS EC2)  
- 
+1. Creating a local PostgreSQL database, importing Northwind and countries data from .csv files, adding primary keys and connecting tables with foreign keys  
+2. Business Analytics with SQL queries 
+3. Cloud database: Setting up an AWS RDS instance, importing Northwind database to the cloud database  
+4. Virtual server: Setting up an AWS EC2 instance and installing Metabase on it and connecting it to the cloud database
+5. Building an interactive dashboard with Metabase  
+
+
+<div align="justify">(Due to costs, both the AWS database and the virtual server has been deleted and the dashboard is not available online anymore.)</div><br>
+
+The folder of this project can be found [here](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/tree/master/05_dashboard).<br>
+<br>
 
 ## 06. The Data Pipeline: Tweets Sentiment Analysis
-
+<br>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/06_data_pipeline_tweets_sentiment_analysis/structure.svg"/>
-</p>
-
+</p><br>
 
 <div align="justify">The challenge of this Data Engineering project was to build a Dockerized Data Pipeline to analyze the sentiment of tweets. At first, using Tweepy API, tweets are collected in a selected topic and stored in a MondoDB database (tweet_collector). Next, the sentiment of tweets is analyzed and the tweets with the scores are stored in a Postgres database (ETL_job). Finally, tweets with sentiment score are published on a Slack channel. (slack_bot)</div><br>
 

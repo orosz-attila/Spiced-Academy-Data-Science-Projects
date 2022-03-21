@@ -2,7 +2,7 @@
 
 <div align="justify">In this project, I built an interactive online dashboard displaying sales data of a fictional company (Northwind Traders). The database was created from .csv files with PostgreSQL and hosted in a cloud database (AWS RDS). The dashboard was created with Metabase that was installed on a virtual server (AWS RC2) and connected to the cloud database.</div><br>
 
-<div align="justify">(Due to costs, the AWS database and virtual server have been deleted and dashboard is not available online anymore.)</div><br>
+<div align="justify">(Due to costs, both the AWS database and the virtual server has been deleted and dashboard is not available online anymore.)</div><br>
 
 <p align="center">
   <img src="https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/c72cf4d72887b833f41c583211852dcdf4092abc/05_dashboard/image/northwind_traders_dashboard.png"/>
@@ -25,7 +25,6 @@
 - <div align="justify">Quit psql by typing \q or exit. You should now be able to login to your database with the password (no sudo required):</div><br>  
 
       psql -h localhost -p 5432 -U postgres -d postgres  
-<br>
 
 #### 1.2. Creating Northwind SQL database from .csv tables (create_tables.sql)
 
@@ -38,7 +37,6 @@
       psql -h 5432 -U postgres -d northwind -f create_tables.sql
 
       psql -h 5432 -U postgres -d northwind -f countries.sql 
-<br>
 
 #### 1.3. Creating [entity-relationship diagram](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/05_dashboard/image/er_diagram_northwind.png) with DBeaver: [adding primary keys and connecting tables with foreign keys](https://dbeaver.com/docs/wiki/New-Table-creation/)  
 
@@ -46,14 +44,10 @@
 <p align="center">
   <img src="https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/05_dashboard/image/er_diagram_northwind.png"/>
 </p>
-<br>
-
 
 ### 2. Business Analytics with SQL queries 
 
 - See [data_analysis_northwind.sql](https://github.com/orosz-attila/Spiced-Academy-Data-Science-Projects/blob/master/05_dashboard/data_analysis_northwind.sql)
-
-<br>
 
 
 ### 3. Cloud database
@@ -86,8 +80,6 @@
 
       \dt
 
-<br>
-
 ### 4. Cloud server
 
   #### 4.1.Creating a virtual server with AWS EC2 and installing Metabase. 
@@ -98,11 +90,9 @@ See step-by-step description in [aws_ec2_installation.sh](https://github.com/oro
 
 For connecting the Northwind cloud database to the Metabase, you should enter the url of the RDS instance as host in database settings of Metabase.  
 
-<br>
-
 ### 5. Building interactive dashboard with Metabase  
 
-Creating visualizations for the dashboard of Northind Traders sales data: 
+#### 5.1. Creating visualizations: 
 
 - Total revenue by countries (map)
 - Number of Customers (card)
@@ -110,17 +100,27 @@ Creating visualizations for the dashboard of Northind Traders sales data:
 - Best selling products (barchart, by descending order)
 - Total revenue by countries (pie chart, descending order, displaying amount and percentage)
 - Number of orders of all products stacked by countries (barchart)
-- Orders per week over time stacked by product categories (barchart)
+- Orders per week over time stacked by product categories (barchart) 
 
-Adding filters to the dashboard: 
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/05_dashboard/image/dashboard_vizs.gif) 
 
-- countries filter: filters data for visualizations by the selected country
+#### 5.2. Adding filters to the dashboard: 
+
+- countries filter: filters data for visualizations by the selected country:
+
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/05_dashboard/image/filtering_country.gif) 
+
+- filtering multiple countries:
+
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/05_dashboard/image/filtering_multiple_countries.gif)
+
+- date filter: filters date for the visualization by selected date:  
+
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/05_dashboard/image/filtering_date.gif)
 
 
+#### 5.4. Setting click behaviour:
 
-- date filter: filters date for the visualization by selected date: 
-
-
-
-Click behaviour setting: 
 - if a country is selected in one visualization, the others display only the data of the selected country:  
+
+![animation](https://raw.githubusercontent.com/orosz-attila/Spiced-Academy-Data-Science-Projects/master/05_dashboard/image/click_behaviour.gif) 
